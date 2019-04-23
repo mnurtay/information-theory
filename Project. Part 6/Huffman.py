@@ -83,6 +83,4 @@ class Huffman:
                 index = list(self.key.values()).index(code)
                 decripted += list(self.key.keys())[index]
                 code = ''
-        writeFile = open('txt_files/Decripted Text.txt', 'w')
-        writeFile.write(decripted)
         return decripted

@@ -22,7 +22,6 @@ def setErrors(data):
 file = ReadFile('txt_files/Text.txt', analize=True)
 source = Huffman(file.data)
 encripted = source.encript(file.file_text)
-test1 = encripted
 channel = Hamming()
 encripted = channel.encode(encripted)
 
@@ -33,6 +32,5 @@ writeToFile('Encripted Text', errorData)
 #fix errors
 channel = Hamming()
 trueData = channel.decode(errorData)
-
-# decripted = huffman.decript(encripted)
-
+decripted = source.decript(trueData)
+writeToFile('Decripted Text', decripted)
