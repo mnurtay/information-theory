@@ -36,10 +36,6 @@ class Huffman:
                 else:
                     self.key[item] = code + self.key[item]
 
-    def __createCode(self, arr):
-        pass
-                    
-
     def __generateKey(self, arr):
         length = len(arr)-1
         while length > 0:   

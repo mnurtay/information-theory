@@ -55,6 +55,3 @@ class Hamming:
       result += temp[:4]
       i, j = j, j+7
     return result
-
-
-# 1010100
